@@ -63,11 +63,12 @@ function Overview() {
         actions={
           <>
             <Button variant="outline">Last 24h</Button>
-            <Button variant="primary" asChild={false}>
-              <span className="inline-flex items-center gap-2">
-                <MapIcon className="size-4" /> Open live map
-              </span>
-            </Button>
+            <Link
+              to="/operations/live-map"
+              className="inline-flex h-9 items-center gap-2 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground transition-all hover:brightness-110"
+            >
+              <MapIcon className="size-4" /> Open live map
+            </Link>
           </>
         }
       />
